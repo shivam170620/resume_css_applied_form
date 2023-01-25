@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1 id="reg-heading">Registartion Form</h1>
+      </div>
+
+      <div>
+        <p>Enter your details below</p>
+
+        <form autocomplete="on" method="post">
+          <ul>
+            <li>
+              <input
+                type="text"
+                name="email"
+                placeholder="your_email@gmail.com"
+              />
+            </li>
+
+            <li>
+              <input type="password" name="password" placeholder="Password" />
+            </li>
+          </ul>
+        <!-- </form> -->
+      </div>
+
+      <div>
+        <p>
+          <em>
+            <strong> !Type a complex password with 8-20 characters </strong>
+          </em>
+        </p>
+
+       
+          <ul>
+            <li>
+              <input
+                type="number"
+                name="phone_number"
+                placeholder="+20 Phone Number"
+              />
+            </li>
+          </ul>
+        <!-- </form> -->
+      </div>
+
+      <hr />
+
+      <div>
+        <p id="p-profession" class="">
+          <em>
+            <strong> Enter your Profession </strong>
+          </em>
+        </p>
+
+       
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="profession"
+                id="profession"
+                value="student"
+              />
+              <label for="profession"> Student </label>
+
+              <input
+                type="radio"
+                name="profession"
+                id="profession"
+                value="Teacher"
+              />
+
+              <label for="profession"> Teacher </label>
+
+              <input
+                type="radio"
+                name="profession"
+                id="profession"
+                value="Developer"
+              />
+
+              <label for="profession"> Developer </label>
+            </li>
+          </ul>
+
+
+           <p>
+             <label for="stage-of-student"> Choose the stage if  you are (student)</label>
+             <select name="stage-of-student" id="stage">
+                <option value="first primary"> first primary</option>
+                <option value="high school">high school</option>
+                <option value="graduation">graduation</option>
+                <option value="post-graduate">PG</option>
+                <option value="doctrate">Phd</option>
+             </select>
+           </p>
+
+           <hr>
+
+
+           <ul>
+            <li>
+                <label for="date" class="date">Enter your birth date:</label>
+                <input type="date" name="date" max="2023-01-25" class="date" id="date-id">
+            </li>
+           </ul>
+
+           <hr>
+
+           <ul>
+            <li>
+                <textarea name="notes" id="textarea-notes" cols="20" rows="1" placeholder="Any notes"></textarea>
+            </li>
+           </ul>
+   
+            <hr>
+
+            <input type="submit" name="submit" class="btn">
+
+           <input type="reset" name="reset" class="btn">
+
+
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
